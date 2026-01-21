@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Мультимедіа в HTML5 | lab13</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<video autoplay muted loop id="bg-video">
+    <source src="video/big_buck_bunny.mp4" type="video/mp4">
+</video>
+
+<div class="content-wrapper">
+    <header>
+        <h1>Мультимедіа в HTML5</h1>
+        <p>Лабораторна робота №13</p>
+    </header>
+
+    <section>
+        <h2>Відео з локальної папки</h2>
+        <div class="video-container">
+            <video controls width="100%">
+                <source src="video/big_buck_bunny.mp4" type="video/mp4">
+                <source src="video/big_buck_bunny.webm" type="video/webm">
+                <source src="video/big_buck_bunny.ogv" type="video/ogg">
+                Ваш браузер не підтримує відео.
+            </video>
+        </div>
+
+        <h2 style="margin-top: 30px;">Відео з YouTube</h2>
+        <div class="video-container">
+            <iframe width="100%" height="315"
+                    src="https://www.youtube.com/embed/aqz-KE-bpKQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section>
+        <h2>Аудіозапис</h2>
+        <audio controls style="width: 100%;">
+            <source src="audio/big_buck_bunny_out.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <section>
+        <h2>Карта Google</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.3157663073252!2d30.367082676060697!3d50.45384438712004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc8fa24d09c3%3A0xf9ed233d151e7c38!2z0JLRltC00LrRgNC40YLQuNC5INC80ZbQttC90LDRgNC-0LTQvdC40Lkg0YPQvdGW0LLQtdGA0YHQuNGC0LXRgiDRgNC-0LfQstC40YLQutGDINC70Y7QtNC40L3QuCAi0KPQutGA0LDRl9C90LAi!5e0!3m2!1suk!2sua!4v1769027747556!5m2!1suk!2sua"
+                width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section>
+        <h2>Активні зони на фото (&lt;map&gt;)</h2>
+        <p>Клацніть на різні предмети на малюнку:</p>
+        <img src="https://www.w3schools.com/html/workplace.jpg" alt="Робоче місце" usemap="#workmap" width="400"
+             height="379">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Ноутбук"
+                  href="https://uk.wikipedia.org/wiki/%D0%9D%D0%BE%D1%83%D1%82%D0%B1%D1%83%D0%BA" target="_blank">
+            <area shape="circle" coords="337,300,44" alt="Кава"
+                  href="https://uk.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B2%D0%B0" target="_blank">
+            <area shape="poly" coords="290,172,333,250,370,170" alt="Смартфон"
+                  href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD" target="_blank">
+        </map>
+    </section>
+
+    <section class="flex-row">
+        <h2>Динамічна графіка</h2>
+        <div>
+            <div class="box">
+                <h3>Canvas JS</h3>
+                <canvas id="canvas" width="200" height="100"></canvas>
+            </div>
+            <div class="box">
+                <h3>SVG</h3>
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                    <polygon points="50,5 20,95 95,35 5,35 80,95" fill="#f1c40f" stroke="#d35400" stroke-width="2"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Мультимедіа HTML5 | lab13</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
