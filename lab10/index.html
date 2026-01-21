@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Анімація | lab10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Анімації та Ефекти</h1>
+
+  <section class="animation-section">
+    <h2><marquee direction="right" scrollamount="5" behavior="alternate" class="section-title-marquee">Тег &lt;marquee&gt; - цікавий ефект</marquee></h2>
+
+    <div class="card marquee-card">
+      <h3>Текстовий Marquee</h3>
+      <p>Зліва направо (scroll) з прискоренням:</p>
+      <marquee direction="right" scrollamount="10" scrolldelay="50" class="m-text-style">Текст біжить швидко!</marquee>
+    </div>
+
+    <div class="card marquee-card">
+      <p>Відскок (alternate) з різним напрямком:</p>
+      <marquee behavior="alternate" direction="up" height="50px" scrollamount="3" class="m-text-style">Текст рухається вгору-вниз!</marquee>
+    </div>
+
+    <div class="card marquee-card">
+      <h3>Marquee для зображення</h3>
+      <p>Зображення, що біжить:</p>
+      <marquee behavior="scroll" direction="left" scrollamount="5">
+        <img src="https://picsum.photos/id/237/100/50" alt="Маленьке біжуче зображення">
+        <img src="https://picsum.photos/id/238/100/50" alt="Інше біжуче зображення">
+        <img src="https://picsum.photos/id/239/100/50" alt="Ще одне біжуче зображення">
+      </marquee>
+    </div>
+  </section>
+
+  <section class="animation-section">
+    <h2><div class="section-title-css-animated">Сучасні та Гнучкі Ефекти</div></h2>
+
+    <div class="card css-card">
+      <h3>Бігучий рядок (як Marquee)</h3>
+      <p>Плавний нескінченний рух:</p>
+      <div class="css-scroll">Aнімація бігучого рядка</div>
+    </div>
+
+    <div class="card css-card">
+      <h3>Пульсація та зміна кольору</h3>
+      <p>Блок, що змінює розмір і колір:</p>
+      <div class="css-pulse">Текст змінює колір та розмір</div>
+    </div>
+
+    <div class="card css-card">
+      <h3>Обертання та Фон</h3>
+      <p>Блок, що обертається та змінює фон:</p>
+      <div class="css-rotate-color">Обертання!</div>
+    </div>
+
+    <div class="card css-card">
+      <h3>Fade-in/Fade-out Текст</h3>
+      <p>Текст, що з'являється та зникає:</p>
+      <div class="css-fade-text">Текст плавно з'являється і зникає.</div>
+    </div>
+
+    <div class="card css-card">
+      <h3>Ефект друкарської машинки</h3>
+      <p>Текст, що друкується літера за літерою:</p>
+      <div class="typing-container">
+        <span class="typing-text">Текст друкується ніби на друкарській машинці ..........</span>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+</body>
+</html>
