@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Використання блоків у css | lab11</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Використання блоків у CSS</h1>
+
+<div class="example-box">
+  <h2>Просте вкладення (Flexbox центрування)</h2>
+  <div class="ex1-outer">
+    <div class="ex1-inner centered-text">Тег всередині та по центру</div>
+  </div>
+</div>
+
+<div class="example-box">
+  <h2>Потрійне вкладення ("Матрьошка")</h2>
+  <div class="ex2-1">
+    <div class="ex2-2">
+      <div class="ex2-3 centered-text">Глибока вкладеність</div>
+    </div>
+  </div>
+</div>
+
+<div class="example-box">
+  <h2>Круглі вкладені блоки (Border Radius)</h2>
+  <div class="ex3-outer centered-text">
+    <div class="ex3-inner centered-text">Коло в колі</div>
+  </div>
+</div>
+
+<div class="example-box">
+  <h2>Накладання блоків (Absolute Positioning)</h2>
+  <div class="ex4-outer centered-text">
+    Батьківський блок
+    <div class="ex4-inner centered-text">Тег в кутку</div>
+  </div>
+</div>
+
+<div class="example-box">
+  <h2>Секційна картка (Структура елементів)</h2>
+  <div class="ex5-card">
+    <div class="ex5-head centered-text">ШАПКА</div>
+    <div class="ex5-body centered-text">Основний контент картки</div>
+    <div class="ex5-foot centered-text">ФУТЕР</div>
+  </div>
+</div>
+
+<div class="example-box">
+  <h2>Сітка з вкладеними блоками (CSS Grid)</h2>
+  <div class="ex6-grid">
+    <div class="ex6-item centered-text">Блок А</div>
+    <div class="ex6-item centered-text">Блок Б</div>
+    <div class="ex6-wide centered-text">Блок на всю ширину сітки</div>
+  </div>
+</div>
+
+</body>
+</html>
