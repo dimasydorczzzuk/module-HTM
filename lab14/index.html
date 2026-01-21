@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивний дизайн та додаткові можливості форматування тексту</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Адаптивний дизайн та додаткові можливості форматування тексту</h1>
+    <p>Лаборатрна робота №14</p>
+</header>
+
+<nav>
+    <a href="#logic">Логічна розмітка</a>
+    <a href="#technical">Технічні теги</a>
+    <a href="#semantic">Семантика</a>
+</nav>
+
+<main class="grid-container">
+    <section id="logic">
+        <span class="status-badge new">new</span>
+        <h2>Робота з цитатами</h2>
+        <p>Для оформлення коротких цитат у тексті ми використали тег <code>&lt;q&gt;</code>: <q>Цей тег автоматично
+            додає лапки навколо тексту</q>, що зручно для невеликих висловів.</p>
+
+        <blockquote>
+            Тег <code>&lt;blockquote&gt;</code> призначений для довгих цитат. У цій роботі ми стилізували його через
+            CSS, додавши кольорову лінію зліва для візуального акценту.
+            <br><cite>— Методичні рекомендації до ЛР №14</cite>
+        </blockquote>
+
+        <p>Напрямок тексту: <bdo dir="rtl">Цей рядок виведено задом наперед за допомогою bdo</bdo>.</p>
+    </section>
+
+    <section id="technical">
+        <h2>Технічне форматування</h2>
+        <p>У лабораторній роботі важливо розрізняти теги для відображення коду:</p>
+        <ul>
+            <li><code>&lt;code&gt;</code> — для окремих команд у тексті.</li>
+            <li><code>&lt;kbd&gt;</code> — для клавіш, наприклад <kbd>F5</kbd>.</li>
+            <li><code>&lt;samp&gt;</code> — для виводу комп'ютерної системи.</li>
+        </ul>
+        <pre>
+/* Тег pre зберігає
+   всі пробіли та
+   переноси рядків */</pre>
+        <p>Математичні індекси: <var>S</var> = <var>a</var><sup>2</sup>, Хімія: H<sub>2</sub>SO<sub>4</sub>.</p>
+    </section>
+
+    <section>
+        <h2>Контроль змін та акценти</h2>
+        <p>Для демонстрації редагування тексту ми використали теги <code>&lt;del&gt;</code> (закреслює
+            <del>старий текст</del>
+            ) та <code>&lt;ins&gt;</code> (підкреслює
+            <ins>новий текст</ins>
+            ).
+        </p>
+        <p>Тег <code>&lt;mark&gt;</code> дозволяє зробити
+            <mark>акцент на важливому</mark>
+            , імітуючи виділення маркером.
+        </p>
+
+        <details>
+            <summary>Натисніть для перегляду пояснення details</summary>
+            <p>Теги <code>&lt;details&gt;</code> та <code>&lt;summary&gt;</code> створюють інтерактивний блок, який
+                можна згортати та розгортати без використання JavaScript.</p>
+        </details>
+    </section>
+
+    <section>
+        <h2>Робота з медіа та скороченнями</h2>
+        <figure>
+            <div style="background: #c4c4f3; height: 100px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                [Контейнер для фото]
+            </div>
+            <figcaption>Рис. 1 — Використання figure для підпису ілюстрацій</figcaption>
+        </figure>
+        <p>Використання абревіатур: <abbr title="HyperText Markup Language">HTML</abbr> та <abbr
+                title="Cascading Style Sheets">CSS</abbr> є основою сучасної верстки.</p>
+    </section>
+
+    <section id="semantic">
+        <h2>Семантичні особливості</h2>
+        <p>Тег <code>&lt;dfn&gt;</code> вказує на перше вживання терміну в тексті: <dfn>Семантична верстка</dfn> — це
+            підхід, при якому вибір тегів залежить від їхньої логічної ролі, а не зовнішнього вигляду.</p>
+
+        <p>Для правильного відображення технічних символів у <abbr title="HyperText Markup Language">HTML</abbr> ми
+            використовуємо символьні сутності (entities):</p>
+        <ul>
+            <li>Символ "менше": <code>&amp;lt;</code> &rarr; &lt;</li>
+            <li>Символ "більше": <code>&amp;gt;</code> &rarr; &gt;</li>
+            <li>Амперсанд: <code>&amp;amp;</code> &rarr; &amp;</li>
+        </ul>
+    </section>
+
+    <section id="adaptive-theory">
+        <h2>Принципи адаптивного дизайну</h2>
+        <p>У цій лабораторній роботі реалізовано адаптивну сітку за допомогою технології <code>CSS Grid</code>. Це
+            дозволяє динамічно змінювати кількість колонок:</p>
+
+        <blockquote>
+            <p>Адаптивність забезпечується через використання медіа-запитів <code>@media</code> та гнучких одиниць
+                вимірювання <code>fr</code> (fractional unit).</p>
+        </blockquote>
+
+        <p>Для коректного масштабування на мобільних пристроях було використано метатег <code>viewport</code>, який
+            керує шириною області перегляду.</p>
+
+        <p><small>Висновок: поєднання семантичних тегів та адаптивної верстки робить сторінку доступною для пошукових
+            систем та зручною для користувачів будь-яких пристроїв.</small></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; Лабораторна робота №14 | Адаптивний дизайн та додаткові можливості форматування тексту</p>
+</footer>
+
+</body>
+</html>
