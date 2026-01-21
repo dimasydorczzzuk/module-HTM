@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1508739773434-c26b3d09e071') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 2.5rem;
+    backdrop-filter: blur(5px);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 250px 1fr 250px;
+    gap: 15px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav, main, aside {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    background: rgba(173, 255, 47, 0.9);
+}
+
+nav h3 {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside {
+    background: rgba(135, 206, 250, 0.9);
+}
+
+aside h3 {
+    text-align: center;
+}
+
+.btn, .btn-blue {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    background: #4dabf7;
+    color: white;
+}
+
+.btn:hover {
+    background: #339af0;
+    transform: scale(1.05);
+}
+
+.btn-blue {
+    background: #339af0;
+    color: white;
+}
+
+.btn-blue:hover {
+    background: #1c7ed6;
+    transform: scale(1.05);
+}
+
+main {
+    background: rgba(255, 255, 240, 0.95);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
