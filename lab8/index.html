@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тема 8</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <nav>
+        <a href="#home">Головна</a>
+        <a href="#projects">Попередні проєкти</a>
+        <a href="#js-zone">JS Функції</a>
+        <a href="#footer" class="nav-special">Інша сторінка</a>
+    </nav>
+</header>
+
+<div class="hero" id="home">
+    <div class="glass-card">
+        <h1>Посилання та кнопки за допомогою css</h1>
+        <p>Ця сторінка демонструє роботу</p>
+        <a href="#footer" class="scroll-down">Прокрутити донизу ↓</a>
+    </div>
+</div>
+
+<main class="container">
+    <section id="projects" class="section">
+        <h2 class="section-title">Попередні роботи</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Тема 6</h3>
+                <p>Таблиці за допомогою css.</p>
+                <a href="http://info-cc-ua.1gb.ua/laboratorium/lab6/index.html" class="btn-neo">Відкрити</a>
+            </div>
+
+            <div class="card">
+                <h3>Тема 7</h3>
+                <p>Заголовки. Робота з великими обсягами тексту.</p>
+                <a href="http://info-cc-ua.1gb.ua/laboratorium/lab7/index.html" class="btn-glass-gen">Відкрити</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-content">
+        <h2 class="section-title">Естетика та функціональність сучасного вебу</h2>
+
+        <p>На початку 1990-х років перша веб-сторінка складалася лише з простого тексту та синіх посилань. Не було ні кнопок, ні анімацій, ні складних макетів. Основною метою було передати інформацію. Сьогодні ми використовуємо <strong>HTML5</strong> та <strong>CSS3</strong>, щоб створювати справжні цифрові шедеври.</p>
+
+        <div class="highlight-box">
+            <p><strong>Цікавий факт:</strong> Користувач формує перше враження про ваш сайт за 0.05 секунди. Саме тому дизайн кнопок та зручність навігації (UX) мають вирішальне значення.</p>
+        </div>
+
+        <h3>Чому посилання — це фундамент інтернету?</h3>
+        <p>Без посилань інтернет був би просто набором ізольованих файлів. Саме <em>гіперпосилання</em> дозволили нам пов'язати знання всього світу в одну мережу. Використання внутрішніх якорів на сторінках з великим обсягом тексту — це ознака поваги до часу користувача. Це дозволяє миттєво перестрибнути до потрібного розділу, не витрачаючи сили на довгий скролінг.</p>
+
+        <p>Сучасний веб-дизайн вимагає простору (whitespace), щоб користувач не втомлювався від інформації. Коли ми додаємо великі відступи між абзацами, ми дозволяємо контенту «дихати».</p>
+
+        <div class="spacer"></div> <h3>Еволюція кнопок: від тексту до інтерактиву</h3>
+        <p>Створення кнопок за допомогою CSS — це мистецтво перетворення звичайного тексту у фізично відчутний елемент. Завдяки таким властивостям, як <code>box-shadow</code>, <code>transition</code> та <code>transform</code>, ми створюємо ілюзію глибини. Коли кнопка «просідає» або змінює колір під курсором, мозок отримує сигнал про успішну взаємодію.</p>
+
+        <p>Використання якорів дозволяє миттєво переміщатися до важливих розділів, як-от зона JavaScript нижче, де ви можете протестувати інтерактивність у дії.</p>
+
+        <p>Завершуючи огляд, варто згадати про адаптивність. Ваш код має однаково гарно виглядати як на великому моніторі, так і на екрані смартфона. Використання Flexbox та Grid у вашій роботі — це прямий шлях до професійної верстки.</p>
+    </section>
+
+    <section id="js-zone" class="section">
+        <h2 class="section-title">Інтерактивні елементи</h2>
+        <div class="js-box">
+            <button onclick="welcomeMessage()" class="btn-simple">Aктивація javascript</button>
+            <button onclick="toggleTheme()" class="btn-glow">Зміна кольору</button>
+        </div>
+    </section>
+
+    <div class="external-link-zone">
+        <a href="test.html" class="floating-link">Перейти на наступну сторінку →</a>
+    </div>
+</main>
+
+<footer id="footer">
+    <p>© 2026 Тема 8</p>
+    <a href="#home" class="back-to-top">Нагору</a>
+</footer>
+
+<script>
+    function welcomeMessage() {
+        alert("Вітаємо! Кнопка працює коректно.");
+    }
+
+    function toggleTheme() {
+        document.body.classList.toggle('dark-theme');
+    }
+</script>
+</body>
+</html>
