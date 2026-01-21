@@ -1,0 +1,111 @@
+:root {
+    --primary: #7c3aed;
+    --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: var(--bg-gradient);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.glass-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 30px;
+    padding: 40px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.section-title {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1f2937;
+    border-left: 4px solid var(--primary);
+    padding-left: 10px;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.check-grid, .radio-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 10px;
+}
+
+.c-box, .radio-group label {
+    background: #f3f4f6;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+}
+
+.c-box:hover, .radio-group input:checked + label {
+    background: #ede9fe;
+    border-color: var(--primary);
+}
+
+.radio-group input {
+    display: none;
+}
+
+input[type="text"], input[type="time"], select, .slider {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+.color-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type="color"] {
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: none;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 18px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.res-card {
+    padding: 20px;
+    border-radius: 18px;
+    color: #1f2937;
+    position: relative;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}

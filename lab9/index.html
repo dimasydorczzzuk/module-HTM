@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма | lab9</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="glass-container">
+    <header>
+        <h1>Форма для запису тренувань</h1>
+        <p>Заповніть усі типи полів для детального звіту</p>
+    </header>
+
+    <form id="megaForm">
+        <div class="form-section">
+            <label class="section-title">Загальна інформація</label>
+            <div class="input-grid">
+                <div class="input-box">
+                    <label>Клієнт</label>
+                    <input type="text" id="userName" placeholder="Прізвище Ім'я" required>
+                </div>
+                <div class="input-box">
+                    <label>Час початку</label>
+                    <input type="time" id="startTime" value="10:00">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <label class="section-title">Складність тренування: <span id="lvlLabel">5</span>/10</label>
+            <input type="range" id="intensity" min="1" max="10" value="5" class="slider">
+        </div>
+
+        <div class="form-section">
+            <label class="section-title">Локація</label>
+            <select id="location" class="custom-select">
+                <option value="Зал">Спортивний зал (Main Gym)</option>
+                <option value="Вулиця">Воркаут майданчик</option>
+                <option value="Вдома">Домашнє тренування</option>
+                <option value="Басейн">Аква-зона</option>
+            </select>
+        </div>
+
+        <div class="form-section">
+            <label class="section-title">Тип навантаження:</label>
+            <div class="radio-group">
+                <input type="radio" name="load" value="Йога" id="r1" checked>
+                <label for="r1">🧘 Йога</label>
+
+                <input type="radio" name="load" value="Кросфіт" id="r2">
+                <label for="r2">🔥 Кросфіт</label>
+
+                <input type="radio" name="load" value="Бокс" id="r3">
+                <label for="r3">🥊 Бокс</label>
+
+                <input type="radio" name="load" value="Танці" id="r4">
+                <label for="r4">💃 Танці</label>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <label class="section-title">Необхідне обладнання:</label>
+            <div class="check-grid">
+                <label class="c-box"><input type="checkbox" name="tool" value="Гантелі"> Гантелі</label>
+                <label class="c-box"><input type="checkbox" name="tool" value="Килимок"> Килимок</label>
+                <label class="c-box"><input type="checkbox" name="tool" value="Скакалка"> Скакалка</label>
+                <label class="c-box"><input type="checkbox" name="tool" value="Еспандер"> Еспандер</label>
+                <label class="c-box"><input type="checkbox" name="tool" value="Штанга"> Штанга</label>
+                <label class="c-box"><input type="checkbox" name="tool" value="Степ"> Степ-платформа</label>
+            </div>
+        </div>
+
+        <div class="form-section color-section">
+            <label>Колір картки в календарі:</label>
+            <input type="color" id="cardColor" value="#7c3aed">
+        </div>
+
+        <button type="submit" class="submit-btn">Зберегти у базу даних</button>
+    </form>
+
+    <div id="resultsWrapper" class="results-area">
+        <h3>Звіти</h3>
+        <div id="cardsContainer" class="cards-grid"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
