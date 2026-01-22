@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Залікова робота - lab15</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&family=Roboto:ital,wght@0,400;1,300&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+
+<div class="video-bg-container">
+    <video autoplay muted loop id="main-video-bg">
+        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+    </video>
+</div>
+
+<header>
+    <div class="header-content container" style="position: relative;">
+        <h1>Залікова робота</h1>
+
+        <button class="menu-toggle" onclick="toggleMenu()">
+            ☰ <span style="margin-left:5px;">Зміст</span>
+        </button>
+
+        <div id="main-menu" class="dropdown-nav">
+            <a href="#tema2">Тема 2: Градієнти</a>
+            <a href="#tema3">Тема 3: Зображення</a>
+            <a href="#tema4">Тема 4: Символи & Шрифти</a>
+            <a href="#tema5">Тема 5: Списки</a>
+            <a href="#tema6">Тема 6: Таблиці</a>
+            <a href="#tema7">Тема 7: Заголовки</a>
+            <a href="#tema8">Тема 8: Кнопки & JS</a>
+            <a href="#tema9">Тема 9: Форми</a>
+            <a href="#tema10">Тема 10: Анімація</a>
+            <a href="#tema11">Тема 11: Блоки</a>
+            <a href="#tema12">Тема 12: Семантика сайту</a>
+            <a href="#tema13">Тема 13: Мультимедіа</a>
+            <a href="#tema14">Тема 14: Адаптивність</a>
+        </div>
+
+        <nav>
+            <a href="http://info-cc-ua.1gb.ua/laboratorium/lab6/index.html" target="_blank">lab6</a>
+            <a href="http://info-cc-ua.1gb.ua/laboratorium/lab7/index.html" target="_blank">lab7</a>
+            <a href="https://github.com/dimasydorczzzuk/module-HTM/tree/main" target="_blank">GitHub</a>
+        </nav>
+    </div>
+</header>
+
+<div class="main-layout container">
+    <aside>
+        <div class="sticky-sidebar">
+            <h3>Зміст завдань</h3>
+            <nav class="side-nav">
+                <a href="#tema2">Тема 2: Градієнти</a>
+                <a href="#tema3">Тема 3: Зображення</a>
+                <a href="#tema4">Тема 4: Символи & Шрифти</a>
+                <a href="#tema5">Тема 5: Списки</a>
+                <a href="#tema6">Тема 6: Таблиці</a>
+                <a href="#tema7">Тема 7: Заголовки</a>
+                <a href="#tema8">Тема 8: Кнопки & JS</a>
+                <a href="#tema9">Тема 9: Форми</a>
+                <a href="#tema10">Тема 10: Анімація</a>
+                <a href="#tema11">Тема 11: Блоки</a>
+                <a href="#tema12">Тема 12: Семантика сайту</a>
+                <a href="#tema13">Тема 13: Мультимедіа</a>
+                <a href="#tema14">Тема 14: Адаптивність</a>
+            </nav>
+        </div>
+    </aside>
+
+    <main>
+        <section class="section-card">
+            <marquee behavior="scroll" direction="left" class="custom-marquee">
+                Виконано залікове завдання: повний цикл розробки веб-сторінки з валідацією.
+            </marquee>
+        </section>
+
+        <section id="tema2" class="section-card">
+            <h2>Тема 2: Градієнтні заливки</h2>
+            <div class="gradient-wrapper">
+                <div class="grad-box l1">L-Grad 1</div>
+                <div class="grad-box l2">L-Grad 2</div>
+                <div class="grad-box l3">L-Grad 3</div>
+                <div class="grad-box l4">L-Grad 4</div>
+                <div class="grad-box l5">L-Grad 5</div>
+                <div class="grad-box r1">R-Grad 1</div>
+                <div class="grad-box r2">R-Grad 2</div>
+                <div class="grad-box r3">R-Grad 3</div>
+                <div class="grad-box r4">R-Grad 4</div>
+                <div class="grad-box r5">R-Grad 5</div>
+                <div class="grad-box c1">C-Grad 1</div>
+                <div class="grad-box c2">C-Grad 2</div>
+                <div class="grad-box c3">C-Grad 3</div>
+                <div class="grad-box c4">C-Grad 4</div>
+                <div class="grad-box c5">C-Grad 5</div>
+                <div class="grad-box rep1">Repeat 1</div>
+                <div class="grad-box rep2">Repeat 2</div>
+                <div class="grad-box rep3">Repeat 3</div>
+                <div class="grad-box rep4">Repeat 4</div>
+                <div class="grad-box rep5">Repeat 5</div>
+            </div>
+        </section>
+
+        <section id="tema3" class="section-card">
+            <h2>Тема 3: Робота з зображеннями</h2>
+
+            <p class="lab3-bg-text">
+                Це демонстрація фонового зображення для текстового елемента. Ми використовуємо властивість
+                background-image разом із padding, щоб текст не торкався країв, та забезпечуємо читабельність.
+            </p>
+
+            <div class="lab3-grid">
+                <div class="lab3-multi-bg">
+                    <h4>Multi-background Block</h4>
+                    <p>Тут поєднано два зображення: одне зафіксоване в кутку, інше — розтягнуте на весь блок.</p>
+                </div>
+
+                <div class="lab3-img-showcase">
+                    <div class="img-item">
+                        <img src="images/photo1.jpg" alt="Nature" class="lab3-round-shadow">
+                        <span>Border-radius & Box-shadow</span>
+                    </div>
+
+                    <div class="img-item">
+                        <div class="lab3-border-image-box">
+                            <img src="images/photo2.jpg" alt="Design">
+                        </div>
+                        <span>Border-image frame</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tema4" class="section-card">
+            <h2>Тема 4 & 14: Мистецтво тексту та символів</h2>
+
+            <div class="text-demo-box">
+                <div class="font-playground">
+                    <p class="p-elegant">Це елегантний текст (Great Vibes). Ми демонструємо властивість <code>font-variant:
+                        small-caps</code> та похилий стиль.</p>
+
+                    <p class="p-modern">Шрифт Rubik Moonrocks: <span class="s-neon">Неонове сяйво тексту</span> за
+                        допомогою декількох тіней <code>text-shadow</code>.</p>
+
+                    <p class="p-artistic">Amatic SC: Використання <code>letter-spacing</code> та
+                        <code>word-spacing</code> для зміни інтервалів між буквами.</p>
+                </div>
+
+                <hr>
+
+                <div class="decoration-demo">
+                    <p class="deco-1">Текст із закресленням <code>line-through</code> (стара ціна:
+                        <del>500 грн</del>
+                        ).
+                    </p>
+                    <p class="deco-2">Верхнє підкреслення <code>overline</code> та колір декорації.</p>
+                    <p class="deco-3">Комбіноване оформлення: підкреслення пунктиром та жирний шрифт.</p>
+                </div>
+
+                <hr>
+
+                <article class="content-text">
+                    <p><span class="drop-cap">I</span>сторія вебу сповнена цікавих подій. <span class="highlight-blue">HTML5</span>
+                        приніс нові можливості, а <span class="highlight-gradient">CSS3</span> дозволив робити магію без
+                        картинок.</p>
+
+                    <p>Використання символів валют: &euro; (євро), &pound; (фунт), &yen; (ієна).
+                        Символи стрілок: &larr; &uarr; &rarr; &darr; та математичні знаки: &plusmn;, &infin;, &sum;.</p>
+
+                    <p class="bdo-example">Цей текст читається справа наліво: <bdo dir="rtl">Я вивчаю
+                        веб-технології</bdo></p>
+                </article>
+
+                <div class="science-box">
+                    <h4>Наукова нотація:</h4>
+                    <p>Глюкоза: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
+                    <p>Теорема Піфагора: a&sup2; + b&sup2; = c&sup2;</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tema5" class="section-card">
+            <h2>Тема 5: Робота зі списками</h2>
+
+            <div class="lists-container">
+                <div class="list-block">
+                    <h4>Марковані списки</h4>
+                    <ul class="custom-bullet-list">
+                        <li>Стандартний маркер (disc)</li>
+                        <li class="circle-bullet">Маркер-кільце (circle)</li>
+                        <li class="square-bullet">Маркер-квадрат (square)</li>
+                    </ul>
+                    <ul class="image-bullet-list">
+                        <li>Елемент із власним зображенням-маркером</li>
+                        <li>Ще один цікавий пункт списку</li>
+                        <li>Використовуємо list-style-image</li>
+                    </ul>
+                </div>
+
+                <div class="list-block">
+                    <h4>Нумеровані списки</h4>
+                    <ol class="decimal-list">
+                        <li>Звичайна нумерація (1, 2, 3)</li>
+                    </ol>
+                    <ol class="roman-list">
+                        <li>Римська нумерація (I, II, III)</li>
+                        <li>Великі латинські літери (A, B, C)</li>
+                    </ol>
+                    <ol class="greek-list">
+                        <li>Нижня грецька нумерація (α, β, γ)</li>
+                    </ol>
+                </div>
+
+                <div class="list-block full-width">
+                    <h4>Багаторівневий список</h4>
+                    <ul class="multi-level-list">
+                        <li>Фрукти
+                            <ul>
+                                <li>Цитрусові
+                                    <ol>
+                                        <li>Лимон</li>
+                                        <li>Апельсин</li>
+                                    </ol>
+                                </li>
+                                <li>Ягоди</li>
+                            </ul>
+                        </li>
+                        <li>Овочі
+                            <ul>
+                                <li>Картопля</li>
+                                <li>Морква</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="list-block full-width">
+                    <h4>Списки визначень (Definition Lists)</h4>
+                    <dl class="custom-dl">
+                        <dt>HTML5</dt>
+                        <dd>П'ята версія основної мови розмітки веб-сторінок.</dd>
+
+                        <dt>CSS3</dt>
+                        <dd>Сучасний стандарт оформлення зовнішнього вигляду документів.</dd>
+
+                        <dt>JavaScript</dt>
+                        <dd>Мова програмування, що додає інтерактивність на сайт.</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="tema6" class="section-card">
+            <h2>Тема 6: Таблиці за допомогою CSS</h2>
+            <div class="table-scroll">
+                <table class="modern-table">
+                    <caption>Порівняльна характеристика технологій</caption>
+                    <thead>
+                    <tr>
+                        <th>Технологія</th>
+                        <th>Призначення</th>
+                        <th>Рівень складності</th>
+                        <th>Популярність</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>HTML5</td>
+                        <td>Структура контенту</td>
+                        <td>Низький</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3</td>
+                        <td>Зовнішній вигляд</td>
+                        <td>Середній</td>
+                        <td>95%</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Інтерактивність</td>
+                        <td>Високий</td>
+                        <td>98%</td>
+                    </tr>
+                    <tr>
+                        <td>React.js</td>
+                        <td>Бібліотека інтерфейсів</td>
+                        <td>Високий</td>
+                        <td>90%</td>
+                    </tr>
+                    <tr>
+                        <td>SASS/SCSS</td>
+                        <td>Препроцесор CSS</td>
+                        <td>Середній</td>
+                        <td>85%</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="3">Середній показник актуальності</td>
+                        <td>93.6%</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <section id="tema7" class="section-card">
+            <h2>Тема 7: Заголовки та великі тексти</h2>
+
+            <nav class="inner-nav">
+                <strong>Зміст розділу:</strong>
+                <ul>
+                    <li><a href="#sub-intro">Вступ до веб-технологій</a></li>
+                    <li><a href="#sub-visual">Візуалізація та Figure</a></li>
+                    <li><a href="#sub-conclusion">Висновки та посилання</a></li>
+                </ul>
+            </nav>
+
+            <div class="large-text-content">
+                <h3 id="sub-intro">Вступ до веб-технологій</h3>
+                <p>
+                    Робота з великими обсягами тексту вимагає чіткої ієрархії. Використання заголовків різного рівня
+                    (від <code>h1</code> до <code>h6</code>) допомагає пошуковим системам та користувачам краще розуміти
+                    структуру сторінки. Текст має бути розбитий на логічні абзаци для полегшення сприйняття.
+                </p>
+                <p>
+                    Ми також використовуємо різні способи вирівнювання тексту: по лівому краю, по центру або за шириною
+                    (justify). Важливо пам'ятати про інтерліньяж (<code>line-height</code>), який ми налаштували у CSS
+                    для комфортного читання.
+                </p>
+
+                <h3 id="sub-visual">Візуалізація та Figure</h3>
+                <p>
+                    Зображення в тексті можуть бути вставлені як звичайні об'єкти або як фігури з підписами. Тег <code>&lt;figure&gt;</code>
+                    є семантично правильним способом групування медіа-контенту та його опису.
+                </p>
+
+                <figure class="styled-figure">
+                    <img src="images/photo3.jpg" alt="Пейзаж">
+                    <figcaption>Мал. 1. Приклад зображення з підписом за допомогою тегу figcaption</figcaption>
+                </figure>
+
+                <p>
+                    Крім того, ми можемо робити посилання на зовнішні документи, наприклад на наші <a href="http://info-cc-ua.1gb.ua/laboratorium/lab7/index.html"  target="_blank">попередні
+                    роботи</a> або зовнішні ресурси, такі як <a href="https://github.com/dimasydorczzzuk/module-HTM/tree/main" target="_blank">GitHub</a>.
+                </p>
+
+                <h3 id="sub-conclusion">Висновки та посилання</h3>
+                <p>
+                    Завершуючи роботу з текстом, важливо підбити підсумки. Правильне форматування робить сайт доступним
+                    (Accessibility) та приємним для ока.
+                </p>
+
+                <div class="anchor-links">
+                    <p>Повернутися до <a href="#tema2">розділу з градієнтами</a> або перейти до <a href="#footer">кінця
+                        сторінки</a>.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tema8" class="section-card">
+            <h2>Тема 8: Посилання та кнопки</h2>
+
+            <div class="links-showcase">
+                <h4>Навігаційні посилання</h4>
+                <p>Перейти до:
+                    <a href="#tema2" class="cool-link">Градієнтів</a>,
+                    <a href="#tema5" class="cool-link">Списків</a> або
+                    <a href="#tema6" class="cool-link">Таблиць</a>.
+                </p>
+            </div>
+
+            <div class="buttons-grid">
+                <div class="btn-item">
+                    <p>Власна кнопка (Handmade):</p>
+                    <button class="btn-custom">Купити зараз</button>
+                </div>
+
+                <div class="btn-item">
+                    <p>Генератор стилю (Gradient Glass):</p>
+                    <a href="#" class="btn-generated">Дізнатись більше</a>
+                </div>
+
+                <div class="btn-item">
+                    <p>Інтерактив (JS):</p>
+                    <button class="btn-js" onclick="runTheme8Task()">Запустити функцію</button>
+                </div>
+            </div>
+
+            <div class="external-links">
+                <p>Посилання на зовнішні ресурси:
+                    <a href="https://www.w3schools.com" target="_blank" class="external-btn">W3Schools ↗</a>
+                </p>
+            </div>
+        </section>
+
+        <section id="tema9" class="section-card">
+            <h2>Тема 9: Робота з формами</h2>
+
+            <div class="forms-wrapper">
+                <div class="form-container">
+                    <h4>Анкета користувача</h4>
+                    <form action="#" method="post" id="userForm">
+                        <div class="form-group">
+                            <label for="userName">Ваше ім'я:</label>
+                            <input type="text" id="userName" name="userName" placeholder="Іван Іванов" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userEmail">Електронна пошта:</label>
+                            <input type="email" id="userEmail" name="userEmail" placeholder="example@mail.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ваша стать:</label>
+                            <div class="radio-group">
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Чоловік</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Жінка</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Тема звернення:</label>
+                            <select id="subject" name="subject">
+                                <option value="feedback">Відгук</option>
+                                <option value="question">Запитання</option>
+                                <option value="other">Інше</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Повідомлення:</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Напишіть нам..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Відправити дані</button>
+                    </form>
+                </div>
+
+                <div class="form-container js-logic-box">
+                    <h4>Математичний модуль (JS)</h4>
+                    <p class="small-desc">Введіть два числа для виконання математичної операції:</p>
+
+                    <div class="form-group">
+                        <input type="number" id="numA" placeholder="Число A">
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="numB" placeholder="Число B">
+                    </div>
+
+                    <div class="js-buttons">
+                        <button type="button" onclick="calculateSum()">Додати</button>
+                        <button type="button" onclick="calculateMultiply()">Помножити</button>
+                    </div>
+
+                    <div id="mathResult" class="result-display">
+                        Результат з'явиться тут...
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tema10" class="section-card">
+            <h2>Тема 10: Анімація (Marquee & CSS Animation)</h2>
+
+            <div class="marquee-demo">
+                <h4>Демонстрація тегу &lt;marquee&gt;</h4>
+                <marquee behavior="alternate" scrollamount="5" class="m1">
+                    Цей текст рухається туди-сюди (alternate).
+                </marquee>
+                <marquee direction="up" scrollamount="2" height="50px" class="m2">
+                    Текст, що пливе вгору...
+                </marquee>
+            </div>
+
+            <hr>
+
+            <div class="css-animation-demo">
+                <h4>Сучасна CSS анімація</h4>
+                <div class="animation-grid">
+                    <div class="anim-box pulse">Pulse</div>
+                    <div class="anim-box slide">Slide</div>
+                    <div class="anim-box rotate">Rotate</div>
+                    <div class="anim-box color-change">Color</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tema11" class="section-card">
+            <h2>Тема 11: Використання блоків (Block Model)</h2>
+
+            <div class="blocks-container">
+                <div class="outer-box">
+                    <div class="middle-box">
+                        <div class="inner-box">
+                            Центрований текст
+                        </div>
+                    </div>
+                    <p class="block-caption">Вкладення: Outer > Middle > Inner</p>
+                </div>
+
+                <div class="flex-center-box">
+                    <div class="content-block">
+                        <h4>Блок 1</h4>
+                        <p>Текст по центру</p>
+                    </div>
+                    <div class="content-block">
+                        <h4>Блок 2</h4>
+                        <p>Вертикальне вирівнювання</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tema12" class="section-card">
+            <h2>Тема 12: Семантична структура сайту</h2>
+            <div class="semantics-demo">
+                <p>Весь цей проект побудований за сучасною семантичною моделлю HTML5. Ось як розподілені ролі між тегами на цій сторінці:</p>
+
+                <div class="structure-visual">
+                    <div class="struct-item"><code>&lt;header&gt;</code> — Шапка сайту з назвою та головним меню.</div>
+                    <div class="struct-item"><code>&lt;nav&gt;</code> — Навігаційна панель (головна зверху та бічна в aside).</div>
+                    <div class="struct-item"><code>&lt;aside&gt;</code> — Бічна панель із переліком усіх 14 тем.</div>
+                    <div class="struct-item"><code>&lt;main&gt;</code> — Основна область контенту, де ви зараз перебуваєте.</div>
+                    <div class="struct-item"><code>&lt;section&gt;</code> — Тематичні розділи (кожна тема — це окрема секція).</div>
+                    <div class="struct-item"><code>&lt;article&gt;</code> — Самостійні блоки тексту (наприклад, у Темі 7).</div>
+                    <div class="struct-item"><code>&lt;footer&gt;</code> — Кінець сайту.</div>
+                </div>
+
+                <div class="validation-note">
+                    <strong>Примітка щодо валідації:</strong> Всі документи (HTML та CSS) пройшли перевірку на сервісах W3C, що підтверджує правильність вкладеності тегів та відсутність помилок у синтаксисі.
+                </div>
+            </div>
+        </section>
+
+        <section id="tema13" class="section-card">
+            <h2>Тема 13: Мультимедіа та інтерактив</h2>
+
+            <div class="media-container">
+                <div class="media-row">
+                    <div class="media-item">
+                        <h4>Відео (iframe)</h4>
+                        <iframe width="100%" height="200" src="https://www.youtube.com/embed/aqz-KE-bpKQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="media-item">
+                        <h4>Карти (iframe)</h4>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.3157663073252!2d30.367082676060697!3d50.45384438712004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc8fa24d09c3%3A0xf9ed233d151e7c38!2z0JLRltC00LrRgNC40YLQuNC5INC80ZbQttC90LDRgNC-0LTQvdC40Lkg0YPQvdGW0LLQtdGA0YHQuNGC0LXRgiDRgNC-0LfQstC40YLQutGDINC70Y7QtNC40L3QuCAi0KPQutGA0LDRl9C90LAi!5e0!3m2!1suk!2sua!4v1769027747556!5m2!1suk!2sua"
+                                width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+                <div class="media-row">
+                    <div class="media-item">
+                        <h4>Аудіо (audio)</h4>
+                        <audio controls class="full-width">
+                            <source src="audio/big_buck_bunny_out.mp3" type="audio/mpeg">
+                            Ваш браузер не підтримує аудіо.
+                        </audio>
+                    </div>
+                    <div class="media-item">
+                        <h4>Локальне відео (video)</h4>
+                        <video controls width="100%" poster="images/photo-video.jpg">
+                            <source src="video/big_buck_bunny.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="graphics-row">
+                    <div class="graphics-item">
+                        <h4>Малювання (Canvas JS)</h4>
+                        <canvas id="creativeCanvas" width="200" height="150"></canvas>
+                    </div>
+                    <div class="graphics-item">
+                        <h4>Векторна графіка (SVG)</h4>
+                        <svg width="200" height="150" viewBox="0 0 200 150">
+                            <rect x="10" y="10" width="180" height="130" rx="20" fill="none" stroke="#007bff" stroke-width="5" />
+                            <circle cx="100" cy="75" r="40" fill="#007bff" />
+                            <text x="75" y="80" fill="white" font-weight="bold">SVG</text>
+                        </svg>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="image-map-item">
+                    <h4>Інтерактивне зображення (Image Map)</h4>
+                    <p class="small-desc">Натисніть на різні частини картинки (ліва/права сторона):</p>
+                    <img src="https://picsum.photos/600/200?random=20" usemap="#workmap" alt="Workspace" class="map-img">
+                    <map name="workmap">
+                        <area shape="rect" coords="0,0,300,200" alt="Left side" href="javascript:alert('Ви натиснули на ліву частину!')">
+                        <area shape="rect" coords="301,0,600,200" alt="Right side" href="javascript:alert('Ви натиснули на праву частину!')">
+                    </map>
+                </div>
+            </div>
+        </section>
+        <section id="tema14" class="section-card">
+            <h2>Тема 14: Адаптивний дизайн & Текстові можливості</h2>
+
+            <div class="adaptive-demo">
+                <div class="status-badge">Адаптивність активована</div>
+                <p>
+                    Весь цей проект розроблений за принципом <strong>Responsive Web Design</strong>.
+                    Ви можете перевірити адаптивність прямо зараз, просто змінивши розмір вікна вашого браузера або відкривши сайт на мобільному пристрої.
+                </p>
+
+                <div class="tech-list">
+                    <h4>Використані технології адаптивності:</h4>
+                    <ul>
+                        <li><strong>Viewport Meta Tag:</strong> Налаштування масштабування для мобільних екранів.</li>
+                        <li><strong>Flexible Grids (Flexbox/Grid):</strong> Автоматичне перелаштування блоків (наприклад, меню ховається або стає вертикальним).</li>
+                        <li><strong>Media Queries:</strong> Спеціальні CSS-правила для різних розширень екрана (<code>@media</code>).</li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <h4>Додаткові можливості форматування:</h4>
+                <div class="formatting-grid">
+                    <p><cite>Цитата джерела (cite):</cite> Робота виконана згідно з навчальним планом.</p>
+                    <p><abbr title="World Wide Web Consortium">W3C</abbr> — приклад використання тегу <code>&lt;abbr&gt;</code>.</p>
+                    <p><q>Вбудована цитата (q)</q> всередині речення.</p>
+                    <address>
+                        <strong>Автор:</strong> Сидорчук Дмитро<br>
+                    </address>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<footer id="footer">
+    <div class="footer-container container">
+        <div class="footer-info">
+            <h4>Про проект</h4>
+            <p>Цей сайт створено як залікову роботу, що об'єднує 14 тем вивчення HTML5 та CSS3. Всі компоненти валідовані та адаптовані під мобільні пристрої.</p>
+        </div>
+
+        <div class="footer-contacts">
+            <h4>Контакти</h4>
+            <address>
+                Студент: <strong>Сидорчук Дмитро</strong><br>
+            </address>
+        </div>
+
+        <div class="footer-links">
+            <h4>Швидка навігація</h4>
+            <ul>
+                <li><a href="https://github.com/dimasydorczzzuk/module-HTM/tree/main">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Залікова робота <cite>lab15</cite></p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
